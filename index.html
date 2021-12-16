@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>personal Website</title>
+</head>
+<body>
+  <main id="fullpage">
+    <!-- intro-section-->
+    <section id="intro" class="container-fluid intro ">
+
+        <div class="intro-content h-100 d-flex justify-content-center align-items-center">
+
+           <div class="intro-name text-center">
+               <h1>Karim Gaber</h1>
+               <span>I am <strong id="text" class="orange"></strong></span>
+           </div>
+
+           <div class="toggler d-flex flex-column  align-items-end">
+             <span class="toogle toogle1"></span>
+             <span class="toogle toogle2"></span>
+          </div>
+
+           <nav class="navbar h-100 col-12 col-xl-2 navbar-expand-lg navbar-light bg-light position-fixed">
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+              <ul class="navbar-nav fw-bolder d-flex flex-column align-items-center justify-content-center">
+                <li class="nav-item active">
+                  <a class="nav-link" onclick="togglemenu()" href="#intro">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="togglemenu()" href="#About-me">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="togglemenu()" href="#Education-Skills">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="togglemenu()" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="togglemenu()" href="#">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="social_media  position-absolute d-flex flex-column">
+              <a href="https://www.facebook.com/" ><img src="images/social media/facebook-24.png" alt="facebook"></a>
+              <a href="https://twitter.com/" ><img src="images/social media/twitter-24.png" alt="twitter"></a>
+              <a href="https://instagram.com" ><img src="images/social media/instagram-24.png" alt="instagram"></a>
+          </div>
+            
+
+          <div class="scrollDown position-absolute">
+             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+             </svg>
+         </div>
+
+        </div>
+        
+    </section>
+
+    <!--About Me-section-->
+    <section id="About-me" class="Container">
+      
+      <div class="about-head text-center">
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-content row d-flex align-items-center justify-content-between">
+        <article class="about-information col-12 col-xl-5 col-lg-5 mb-5">
+          <div class="information">
+            <span><strong>Age</strong> : 20</span>
+            <span><strong>Birth date</strong> : 13 March 2002</span>
+            <span><strong>language</strong> : Arabic,English</span>
+            <span><strong>Phone</strong> : +201110054682</span>
+            <span><strong>Email</strong> : karimgaberfe@gmail.com</span>
+            <span>Experience<strong></strong> : 2 years</span>
+            <span><strong>Freelance</strong> : Available</span>
+          </div>
+
+          <div class="about-social text-center">
+            <a href="" class="mx-3"><img src="images/social media/facebook-24.png" alt="facebook"></a>
+            <a href="" class="mx-3"><img src="images/social media/twitter-24.png" alt="twitter"></a>
+            <a href="" class="mx-3"><img src="images/social media/instagram-24.png" alt="instagram"></a>
+            <a href="" class="mx-3"><img src="images/social media/email-24.png" alt="email"></a>
+          </div>
+        </article>
+
+        <article class="about-text col-12 col-xl-6 col-lg-6">
+          <h3 class="mb-4">Hello I'm <span>Karim Gaber</span></h3>
+          <div class="text">
+            <p class="mb-4">
+              I'm Karim Gaber. Creative Web Designer And  Front End developer With More Than 2 Years Experience.I describe myself as a emotional developer who loves coding, open source, and the web platform.I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best experience suited to their device and browser.I write standards based code that is semantic, accessible, search-engine friendly, easy to maintain, cross browser compatible, and performant.
+            </p>
+          </div>
+          <a href="#" class=" shadow-btn btn btn-dark d-inline-block">Download  Resume</a>
+          <a href="#" class=" btn btn-outline-dark d-inline-block border-2 text-white">My Works</a>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!--Education & Skills section-->
+    <section id="Education-Skills" class="Container">
+      
+      <div class="Education-Skills-head text-start position-relative">
+        <h2>Education & Skills</h2>
+      </div>
+
+      <div class="Education-content row d-flex align-items-center justify-content-between">
+        <article class="Education-information col-12 col-xl-5 col-lg-5 mb-5">
+          <div class="information">
+            <span><strong>HTML,CSS,JS,SASS
+            </strong><br> online courses</span>
+            <small>2019-2020</small>
+            <span><strong>CS50's Introduction to Computer Science</strong><br>University  of HarvardX  online</span>
+            <small>2019-2020</small>
+            <span><strong>Front-End Web UI Frameworks and Tools:
+              Bootstrap</strong><br>online course authorized by The Hong Kong University
+            </span>
+            <small>2020-2021</small>
+            <span><strong>Front-End JavaScript Frameworks: Angular
+            </strong><br>online course authorized by The Hong Kong University
+          </span>
+            <small>2020-2021</small>
+            <span><strong>Foundations of User Experience (UX) Design
+            </strong><br> online course authorized by Google </span>
+          </div>
+
+        </article>
+
+        <article class="Skill-Cards col-12 col-xl-6 col-lg-6">
+          <div class="row">
+          <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span> <i class="fa fa-wrench" aria-hidden="true"></i>
+                HTML</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span> <i class="fa fa-wrench" aria-hidden="true"></i>
+                CSS</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 SASS</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 Bootstrap 5</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 basics adobe illustrator</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 Javascript</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 Json</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 Ajax</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 Angular</span>
+            </div>
+          </div>
+
+          <div class="Skill-card card border-0 col-12 mb-5">
+            <div class="card-body bg-dark ">
+              <span><i class="fa fa-wrench" aria-hidden="true"></i>
+                 basics figma</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        </article>
+      </div>
+
+      <span class="line col-7 bg-white d-flex m-auto"></span>
+
+          <!--what i do?-->
+          <article class="what-i-do">
+          <div class="doing-head text-start position-relative">
+            <h2>What i do?</h2>
+          </div>
+
+          <div class="row">
+			 
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4 col-12">
+                 
+            <div class="box-part text-center">
+                          
+              <img src="images/services/icons8-javascript-96 1.png" class=""></img>
+                          
+              <div class="title">
+                <h4>Javascript Development</h4>
+              </div>
+                          
+              <div class="text">
+                <span>JavaScript frameworks sit at the heart of any modern website. Toptal JavaScript developers use their extensive experience with core JavaScript development and the newest frameworks and libraries to build dynamic and responsive websites.</span>
+              </div>
+                          
+                          
+             </div>
+          </div>	 
+          
+           <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4 col-12">
+                 
+            <div class="box-part text-center">
+                
+                <img src="images/services/icons8-web-128 1.png" class=""></img>
+                      
+              <div class="title">
+                <h4>HTML&CSS Responsive Web Design</h4>
+              </div>
+                          
+              <div class="text">
+                <span>Enterprise-class websites need consistent colors, fonts, and design to match the organization's branding guidelines. Toptal’s front-end developers are experts at designing responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.</span>
+              </div>
+                          
+                          
+             </div>
+          </div>	 
+          
+           <div class="col-lg-4 col-md-6 col-sm-6 col-xl-4 col-12">
+                 
+            <div class="box-part text-center">
+                          
+              <img src="images/services/icons8-angularjs-96 1.png" class=""></img>
+                          
+              <div class="title">
+                <h4>Angular Development</h4>
+              </div>
+              <div class="text">
+                <span>Angular is renowned for its extensibility, adjustability, and convenience. Toptal Angular developers create complex software for your business</span>
+              </div>
+             </div>
+          </div>	 
+          </div>
+      
+  
+        </article>
+    </section>
+
+    
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

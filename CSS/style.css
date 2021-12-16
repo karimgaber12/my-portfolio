@@ -1,0 +1,381 @@
+.orange {
+  color: #FF9301;
+}
+
+.Container {
+  margin: 50px 72px;
+}
+
+.Education-content, .about-content {
+  margin-top: 63px;
+}
+
+.Education-content .Education-information, .about-content .about-information {
+  min-height: 650px;
+  box-shadow: 4px 4px 42px 1px rgba(255, 145, 1, 0.15);
+  padding: 40px 30px;
+}
+
+.what-i-do .doing-head::before, .Education-Skills-head::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FF9301;
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  z-index: -1;
+  -webkit-animation: upToDown 1s ease-in-out infinite alternate;
+          animation: upToDown 1s ease-in-out infinite alternate;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #1E1816;
+  color: #fff;
+  height: 5000px;
+}
+
+/* intro section*/
+.intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/hero 1.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.intro-name {
+  position: relative;
+  cursor: pointer;
+}
+.intro-name h1 {
+  font-size: 64px;
+}
+.intro-name span {
+  font-size: 24px;
+}
+.intro-name:before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: -72px;
+  width: 100px;
+  height: 120px;
+  border-left: #fff 6px solid;
+  border-top: #fff 6px solid;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+}
+.intro-name:after {
+  content: "";
+  position: absolute;
+  bottom: -55px;
+  right: -72px;
+  width: 100px;
+  height: 120px;
+  border-right: #fff 6px solid;
+  border-bottom: #fff 6px solid;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+}
+.intro-name:hover::after {
+  width: 139.5%;
+  height: 191%;
+}
+.intro-name:hover::before {
+  width: 139.5%;
+  height: 191%;
+}
+.intro .toggler {
+  position: fixed;
+  top: 58px;
+  right: 60px;
+  width: 74px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 3;
+}
+.intro .toggler .toogle {
+  display: inline-block;
+  width: 74px;
+  height: 4px;
+  background-color: #fff;
+  transition: all ease-in-out 0.3s;
+  margin-top: 12px;
+}
+.intro .toggler .toogle.active1 {
+  background-color: #111;
+}
+.intro .toggler .toogle:nth-child(2) {
+  width: 54px;
+}
+.intro .toggler .toogle:nth-child(2).active {
+  transform: translate(-6px, -14px) rotate(40deg);
+  transition: all ease-in-out 0.3s;
+  background-color: #111;
+}
+.intro .social_media {
+  bottom: 58px;
+  right: 60px;
+}
+.intro .social_media a {
+  margin-top: 14px;
+}
+.intro .social_media a:hover img {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.4) rotate(360deg);
+}
+.intro .scrollDown {
+  bottom: 10px;
+  -webkit-animation: upToDown 1s ease-in-out infinite alternate;
+          animation: upToDown 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes upToDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes upToDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.intro nav {
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transition: all ease-in-out 0.3s;
+  transform-origin: top;
+  z-index: 2;
+}
+.intro nav.active {
+  transition: all ease-in-out 0.3s;
+  transform: scaleY(1);
+}
+.intro nav .nav-item {
+  background-color: #fff;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 36px;
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  transition: all ease-in-out 0.3s;
+}
+.intro nav .nav-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 25px solid transparent;
+  border-right: 24px solid #FF9301;
+}
+.intro nav .nav-item:hover {
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.3s;
+}
+
+#About-me {
+  min-height: 900px;
+}
+
+.about-head h2 {
+  font-size: 48px;
+}
+.about-head span {
+  color: #FF9301;
+}
+
+.about-content .about-text h3 {
+  font-size: 36px;
+}
+.about-content .about-text h3 span {
+  color: #FF9301;
+}
+.about-content .about-text .text p {
+  font-size: 20px;
+  line-height: 2;
+}
+.about-content .about-text .shadow-btn {
+  margin-right: 10px;
+  box-shadow: 73px 6px 200px 0 #fff;
+}
+.about-content .about-information {
+  border-radius: 10px;
+}
+.about-content .about-information span {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 24px;
+}
+.about-content .about-information .about-social {
+  margin-top: 60px;
+}
+.about-content .about-information .about-social a {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.about-content .about-information .about-social a img {
+  transition: all ease-in-out 0.3s;
+}
+.about-content .about-information .about-social a:hover > img {
+  transform: rotate(360deg);
+  transition: all ease-in-out 0.3s;
+}
+
+.Education-Skills-head {
+  z-index: 1;
+}
+.Education-content .Education-information {
+  border-radius: 56px;
+}
+.Education-content .Education-information span {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 20px;
+}
+.Education-content .Skill-card {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  color: rgba(255, 255, 255, 0.609);
+  background-color: transparent;
+}
+.Education-content .Skill-card .card-body {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Education-content .Skill-card::after {
+  content: " ";
+  background-color: #FF9301;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Education-content .Skill-card:hover {
+  transform: translate(0, -4px);
+  transition: all ease-in-out 0.3s;
+  color: white;
+}
+
+.line {
+  height: 3px;
+}
+
+.what-i-do .doing-head {
+  margin-top: 60px;
+}
+.what-i-do .box-part {
+  padding: 30px 10px;
+  margin: 60px 0px;
+  min-height: 500px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-top: 3px solid white;
+  border-left: 3px solid rgba(30, 24, 22, 0.72);
+}
+.what-i-do .box-part .title {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.what-i-do .box-part .text {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+
+/*
+ responsive
+ */
+@media (max-width: 1200px) and (min-width: 991px) {
+  .Container {
+    margin: 63px 20px;
+  }
+
+  .intro-name h1 {
+    font-size: 40px !important;
+  }
+  .intro-name span {
+    font-size: 20px !important;
+  }
+
+  .about-content .about-text h3 {
+    font-size: 25px;
+  }
+  .about-content .about-text .text p {
+    font-size: 15px;
+  }
+  .about-content .about-information span {
+    font-size: 15px !important;
+  }
+  .about-content .about-information .about-social {
+    margin-top: 100px;
+  }
+
+  .Education-content .Education-information span {
+    font-size: 15px !important;
+  }
+
+  .what-i-do .box-part .title {
+    font-size: 17px;
+  }
+  .what-i-do .box-part .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .Container {
+    margin: 63px 20px;
+  }
+
+  .intro-name h1 {
+    font-size: 40px !important;
+  }
+  .intro-name span {
+    font-size: 20px !important;
+  }
+
+  .about-content .about-text h3 {
+    font-size: 25px;
+  }
+  .about-content .about-text .text p {
+    font-size: 15px;
+  }
+  .about-content .about-information span {
+    font-size: 15px !important;
+  }
+  .about-content .about-information .about-social {
+    margin-top: 100px;
+  }
+
+  .Education-content .Education-information span {
+    font-size: 15px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
