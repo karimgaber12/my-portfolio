@@ -5,12 +5,14 @@ $transition-standard:all ease-in-out .3s;
 $tablet-width: 1200px;
 $mobile-width:575px;
 $small-screen-width:1400px;
+$gradiant-portfolio: linear-gradient(to left top, $secondary-font-color 10%, #FF512F 90%);
+
 // classes
 .orange{
     color: $secondary-font-color;
 }
 .Container{
-    margin: 50px 72px;
+    padding:  50px 0px;
 }
 // sharing property
 %share-margin{
@@ -32,5 +34,15 @@ $small-screen-width:1400px;
     top: -2px;
     z-index: -1;
     animation: upToDown 1s ease-in-out infinite alternate;
+
+}
+
+%hover-btn-portfolio{
+    background: $gradiant-portfolio;
+    background-clip: none ;
+    -webkit-text-fill-color: #fff ;
+    border: 5px solid #fff; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
 
 }

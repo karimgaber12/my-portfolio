@@ -3,7 +3,7 @@
 }
 
 .Container {
-  margin: 50px 72px;
+  padding: 50px 0px;
 }
 
 .Education-content, .about-content {
@@ -28,6 +28,15 @@
   z-index: -1;
   -webkit-animation: upToDown 1s ease-in-out infinite alternate;
           animation: upToDown 1s ease-in-out infinite alternate;
+}
+
+.card .btn-portfolio:focus, .card .btn-portfolio:hover {
+  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  background-clip: none;
+  -webkit-text-fill-color: #fff;
+  border: 5px solid #fff;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
 }
 
 * {
@@ -349,6 +358,33 @@ body {
   .what-i-do .box-part .text {
     font-size: 14px;
   }
+}
+/*portfolio*/
+.card {
+  background: #222;
+  border: 1px solid #1E1816;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+.card img {
+  height: 200px;
+  transition: all ease-in-out 0.3s;
+}
+.card:hover img {
+  transform: scale(1.1) rotate(3deg);
+  transition: all ease-in-out 0.3s;
+}
+.card .btn-portfolio {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-source: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
 }
 @media (max-width: 575px) {
   .Container {
