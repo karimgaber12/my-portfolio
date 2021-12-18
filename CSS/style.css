@@ -2,8 +2,12 @@
   color: #FF9301;
 }
 
+.bg-orange {
+  background-color: #FF9301;
+}
+
 .Container {
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 
 .Education-content, .about-content {
@@ -37,19 +41,6 @@
   border: 5px solid #fff;
   box-shadow: #222 1px 0 10px;
   text-decoration: underline;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: #1E1816;
-  color: #fff;
-  height: 5000px;
 }
 
 /* intro section*/
@@ -163,42 +154,6 @@ body {
     transform: translateY(-10px);
   }
 }
-.intro nav {
-  top: 0;
-  right: 0;
-  transform: scaleY(0);
-  transition: all ease-in-out 0.3s;
-  transform-origin: top;
-  z-index: 2;
-}
-.intro nav.active {
-  transition: all ease-in-out 0.3s;
-  transform: scaleY(1);
-}
-.intro nav .nav-item {
-  background-color: #fff;
-  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
-  margin-top: 36px;
-  width: 220px;
-  height: 45px;
-  text-align: center;
-  position: relative;
-  font-size: 24px;
-  transition: all ease-in-out 0.3s;
-}
-.intro nav .nav-item::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-bottom: 20px solid transparent;
-  border-top: 25px solid transparent;
-  border-right: 24px solid #FF9301;
-}
-.intro nav .nav-item:hover {
-  transform: translateY(-5px);
-  transition: all ease-in-out 0.3s;
-}
 
 #About-me {
   min-height: 900px;
@@ -300,7 +255,6 @@ body {
   padding: 30px 10px;
   margin: 60px 0px;
   min-height: 500px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
@@ -308,8 +262,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border-top: 3px solid white;
-  border-left: 3px solid rgba(30, 24, 22, 0.72);
+  border: 2px solid rgba(255, 255, 255, 0.157);
+  transition: all ease-in-out 0.3s;
+}
+.what-i-do .box-part:hover {
+  transition: all ease-in-out 0.3s;
+  transform: translateY(-7px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 .what-i-do .box-part .title {
   margin-top: 15px;
@@ -320,9 +279,47 @@ body {
   font-size: 18px;
 }
 
-/*
- responsive
- */
+.Portfolio-head h2 {
+  font-size: 48px;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #1E1816;
+  margin: 2rem 0;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+.card img {
+  height: 200px;
+  transition: all ease-in-out 0.3s;
+}
+.card:hover img {
+  transform: scale(1.1) rotate(1deg);
+  transition: all ease-in-out 0.3s;
+}
+.card .btn-portfolio {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-source: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.navPills {
+  border-bottom: 3px solid #212529;
+}
+.navPills .nav-item .nav-link {
+  color: #fff;
+}
+.navPills .nav-item .active {
+  background-color: #212529;
+  border-radius: 0;
+}
+
 @media (max-width: 1200px) and (min-width: 991px) {
   .Container {
     margin: 63px 20px;
@@ -360,32 +357,6 @@ body {
   }
 }
 /*portfolio*/
-.card {
-  background: #222;
-  border: 1px solid #1E1816;
-  margin-bottom: 2rem;
-  overflow: hidden;
-  transition: all ease-in-out 0.3s;
-}
-.card img {
-  height: 200px;
-  transition: all ease-in-out 0.3s;
-}
-.card:hover img {
-  transform: scale(1.1) rotate(3deg);
-  transition: all ease-in-out 0.3s;
-}
-.card .btn-portfolio {
-  border: 5px solid;
-  border-image-slice: 1;
-  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-image-source: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
-  text-decoration: none;
-  transition: all ease-in-out 0.3s;
-}
 @media (max-width: 575px) {
   .Container {
     margin: 63px 20px;
@@ -414,4 +385,68 @@ body {
   .Education-content .Education-information span {
     font-size: 15px !important;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #1E1816;
+  color: #fff;
+  height: 5000px;
+}
+
+nav {
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transition: all ease-in-out 0.3s;
+  transform-origin: top;
+  z-index: 2;
+}
+nav.active {
+  transition: all ease-in-out 0.3s;
+  transform: scaleY(1);
+}
+nav .nav-item {
+  background-color: #fff;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 36px;
+  width: 220px;
+  height: 45px;
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  transition: all ease-in-out 0.3s;
+}
+nav .nav-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 25px solid transparent;
+  border-right: 24px solid #FF9301;
+}
+nav .nav-item:hover {
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.3s;
+}
+
+#Contact-me h2 {
+  font-size: 48px;
+}
+#Contact-me h2 span {
+  color: #FF9301;
+}
+
+.btn-send {
+  background-color: #1E1816;
+  color: #fff;
+}
+.btn-send:hover {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */

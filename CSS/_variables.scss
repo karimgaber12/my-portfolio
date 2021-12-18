@@ -2,17 +2,22 @@ $main-background-color: #1E1816;
 $main-font-color: #fff;
 $secondary-font-color:#FF9301;
 $transition-standard:all ease-in-out .3s;
+$bg-dark:#212529;
+$gradiant-portfolio: linear-gradient(to left top, $secondary-font-color 10%, #FF512F 90%);
 $tablet-width: 1200px;
 $mobile-width:575px;
 $small-screen-width:1400px;
-$gradiant-portfolio: linear-gradient(to left top, $secondary-font-color 10%, #FF512F 90%);
 
 // classes
 .orange{
     color: $secondary-font-color;
 }
+.bg-orange{
+    background-color: $secondary-font-color;
+}
+
 .Container{
-    padding:  50px 0px;
+    padding:  30px 0px;
 }
 // sharing property
 %share-margin{
@@ -46,3 +51,4 @@ $gradiant-portfolio: linear-gradient(to left top, $secondary-font-color 10%, #FF
     text-decoration: underline;
 
 }
+

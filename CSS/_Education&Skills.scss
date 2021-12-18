@@ -1,0 +1,90 @@
+.Education-Skills-head{
+    z-index: 1;
+    &::before{
+        @extend %circle-head;
+    }
+}
+.Education-content{
+    @extend %share-margin;
+    .Education-information{
+        @extend %share-box;
+        border-radius: 56px;
+
+        span{
+            display: block;
+            margin-bottom: 33px;
+            font-size: 20px;
+        }
+
+    }
+    .Skill-card{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        transition: $transition-standard;
+        color: rgba(255, 255, 255, 0.609);
+        background-color: transparent;
+        .card-body{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;    
+        }
+        &::after{
+            content: " ";
+            background-color: $secondary-font-color;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &:hover{
+            transform: translate(0,-4px);
+            transition: $transition-standard;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+.line{
+    height: 3px;
+}
+.what-i-do{
+    .doing-head{
+        margin-top: 60px;
+        &::before{
+            @extend %circle-head;
+        }
+    }
+
+      .box-part{
+          padding:30px 10px;
+          margin:60px 0px;
+          min-height: 500px;
+          border-radius: 15px;
+          background:rgba(255,255,255,0.1);
+          overflow: hidden;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          border: 2px solid rgba(255, 255, 255, 0.157) ;
+          transition: $transition-standard;
+
+          &:hover{
+              transition: $transition-standard;
+              transform: translateY(-7px);
+              box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+
+          }
+          .title{
+              margin-top: 15px;
+              font-size: 20px;
+          }
+          .text{
+            margin:20px 0px;
+            font-size: 18px;
+        }
+  
+        }
+      
+}
+

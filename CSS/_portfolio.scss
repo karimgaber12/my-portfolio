@@ -1,0 +1,54 @@
+.Portfolio-head{
+    h2{
+        font-size: 48px;
+    }
+}
+.card {
+    background: #222;
+    border: 1px solid $main-background-color;
+    margin: 2rem 0;
+    overflow: hidden;
+    transition: $transition-standard;
+
+    img{
+        height: 200px;
+        transition: $transition-standard;
+
+    }
+    &:hover img{
+        transform: scale(1.1) rotate(1deg);
+        transition: $transition-standard;
+
+    }
+    .btn-portfolio {
+        border: 5px solid;
+        border-image-slice: 1;
+        background: $gradiant-portfolio ;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-image-source: $gradiant-portfolio ; 
+        text-decoration: none;
+        transition: $transition-standard;
+        &:hover{
+            @extend %hover-btn-portfolio;
+        }
+        &:focus{
+            @extend %hover-btn-portfolio;
+
+        }
+      }
+          
+  }
+  
+  .navPills{
+      border-bottom:3px solid $bg-dark;
+      .nav-item{
+        .nav-link{
+            color: #fff;
+        }
+          .active{
+              background-color: $bg-dark;
+              border-radius: 0;
+          }
+      }
+  }
