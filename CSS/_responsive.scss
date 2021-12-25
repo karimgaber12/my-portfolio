@@ -1,19 +1,16 @@
-@media(max-width:$tablet-width) and (min-width:991px){
-    .Container{
-        margin:63px 20px;
-    }
+@media(max-width:$tablet-width) and (min-width:$mobile-width){
     // intro section
-.intro{
-    &-name{
-        h1{
-            font-size: 40px !important;
+    .intro{
+        .toggler{
+            top: 10px;
+            right:10px;
+        }    
+        .social_media {
+            bottom: 10px;
+            right:10px;
         }
-        span{
-            font-size: 20px !important;
-        }
-          }
-    } 
 
+    }
     // about me section
     .about-content{
         .about-text{
@@ -65,8 +62,12 @@
 
 
 @media(max-width:$mobile-width){
-    .Container{
-        margin:63px 20px;
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     // intro section
 .intro{
@@ -75,11 +76,47 @@
             font-size: 40px !important;
         }
         span{
-            font-size: 20px !important;
+            font-size: 15px !important;
         }
+        &:before{
+            top: -55px;
+            left: -50px;
+            width: 100px;
+            height: 120px;
+
+        }
+        &:after{
+            bottom: -55px;
+            right: -50px;
+            width: 100px;
+            height: 120px;
+
+        }
+        &:hover::after{
+            width: 143.5%;
+            height: 238%;
+        }
+        &:hover::before{
+            width: 143.5%;
+            height: 237%;
+            
+        }
+
           }
+          .toggler{
+            top: 10px;
+            right:10px;
+        }    
+
+        .social_media {
+            bottom: 10px;
+            right:10px;
+        }
+
     } 
 
+    
+    
     // about me section
     .about-content{
         .about-text{

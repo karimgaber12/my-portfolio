@@ -11,9 +11,8 @@
     <title>personal Website</title>
 </head>
 <body>
-  <main id="fullpage">
     <!-- intro-section-->
-    <section id="intro" class="container-fluid intro ">
+    <section id="intro" class="container-fluid intro">
 
         <div class="intro-content h-100 d-flex justify-content-center align-items-center">
 
@@ -39,6 +38,11 @@
                 <li class="nav-item">
                   <a class="nav-link" onclick="togglemenu()" href="#Education-Skills">Resume</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" onclick="togglemenu()" href="#Services">Services</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" onclick="togglemenu()" href="#Portfolio">Portfolio</a>
                   </li>
@@ -53,14 +57,15 @@
               <a href="https://www.facebook.com/" ><img src="images/social media/facebook-24.png" alt="facebook"></a>
               <a href="https://twitter.com/" ><img src="images/social media/twitter-24.png" alt="twitter"></a>
               <a href="https://instagram.com" ><img src="images/social media/instagram-24.png" alt="instagram"></a>
+              <a href="https://instagram.com" ><img src="images/social media/email-24.png" alt="instagram"></a>
           </div>
             
 
-          <div class="scrollDown position-absolute">
-             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+          <a href="#About-me" class="scrollDown position-absolute">
+             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
              </svg>
-         </div>
+         </a>
 
         </div>
         
@@ -100,8 +105,8 @@
               I'm Karim Gaber. Creative Web Designer And  Front End developer With More Than 2 Years Experience.I describe myself as a emotional developer who loves coding, open source, and the web platform.I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best experience suited to their device and browser.I write standards based code that is semantic, accessible, search-engine friendly, easy to maintain, cross browser compatible, and performant.
             </p>
           </div>
-          <a href="#" class=" shadow-btn btn btn-dark d-inline-block">Download  Resume</a>
-          <a href="#" class=" btn btn-outline-dark d-inline-block border-2 text-white">My Works</a>
+          <a href="#Contact-me" class=" shadow-btn btn btn-dark d-inline-block">Hired me</a>
+          <a href="#Portfolio" class=" btn btn-outline-dark d-inline-block border-2 text-white">My Works</a>
         </article>
 
 
@@ -220,8 +225,8 @@
 
       <span class="line col-7 bg-white d-flex m-auto"></span>
 
-          <!--what i do?-->
-          <article class="what-i-do">
+          <!--what i do? Services-->
+          <section id="Services" class="what-i-do">
           <div class="doing-head text-start position-relative">
             <h2>What i do?</h2>
           </div>
@@ -281,7 +286,8 @@
           </div>
       
   
-        </article>
+          </section>
+          
     </section>
 
     <!-- My-Portfolio-->
@@ -362,9 +368,9 @@
     </section>
 
     <!--Contact Me-->
-<section id="Contact-me" class="bg-dark mb-4">
+<section id="Contact-me" class="bg-dark mb-4 container-fluid Container">
   <!--Section heading-->
-  <div class="container  p-5">
+  <div class="container p-5">
   <h2 class=" text-center mb-5">Contact <span>Me</span></h2>
   <!--Section description-->
 
@@ -453,7 +459,44 @@
 </div>
 </section>
 
-  </main>
+    <!--footer -->
+<section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          </div>
+          </div>
+          </section>
+          <footer class="footer-07">
+          <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+          <h2 class="footer-heading"><a href="#" class="logo">Karim.com</a></h2>
+          <p class="menu">
+          <a href="#intro">Home</a>
+          <a href="#About-me">About</a>
+          <a href="#Education-Skills">Education&Skills</a>
+          <a href="#Services">Services</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contact-me">Contact</a>
+          </p>
+          <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="gmail"><span class="fa fa-envelope"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook-official"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+          </div>
+          </div>
+          <div class="row mt-5">
+          <div class="col-md-12 text-center">
+          <p class="copyright">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> <strong>karim gaber</strong> </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/main.js"></script>

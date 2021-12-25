@@ -108,6 +108,7 @@
     .scrollDown{
        bottom: 10px;
        animation: upToDown 1s ease-in-out infinite alternate;
+       cursor: pointer;
 }
 // animation scroll
 @keyframes upToDown {
