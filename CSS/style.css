@@ -430,6 +430,10 @@ body {
   color: #fff;
 }
 
+main {
+  overflow: hidden;
+}
+
 nav {
   top: 0;
   right: 0;
