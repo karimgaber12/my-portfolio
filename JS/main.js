@@ -155,3 +155,8 @@ closePopUp.addEventListener("click",()=>{
     popup.classList.remove("active")
 })
 
+// loading page
+const spinner = document.querySelector(".spinner")
+window.addEventListener("load",()=>{
+    spinner.classList.add("active")
+})
