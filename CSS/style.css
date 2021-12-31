@@ -290,13 +290,35 @@
   margin: 2rem 0;
   overflow: hidden;
   transition: all ease-in-out 0.3s;
+  position: relative;
 }
 .card img {
   height: 200px;
   transition: all ease-in-out 0.3s;
 }
 .card:hover img {
-  transform: scale(1.1) rotate(1deg);
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img i {
+  font-size: 30px;
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img i:hover {
+  transition: all ease-in-out 0.3s;
+  font-size: 35px;
+}
+.card:hover .project-img {
+  opacity: 1;
   transition: all ease-in-out 0.3s;
 }
 .card .btn-portfolio {
@@ -319,6 +341,54 @@
 .navPills .nav-item .active {
   background-color: #212529;
   border-radius: 0;
+}
+
+.portfolio-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  width: 100vw;
+  height: 100vh;
+  background-color: #170a0a9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio-popup.active {
+  transform: scale(1);
+}
+.portfolio-popup .carousel {
+  transform: scale(0);
+  transition: all ease 0.4s 0.4s;
+}
+.portfolio-popup .carousel.active {
+  transform: scale(1);
+}
+.portfolio-popup .carousel .carousel-inner {
+  max-width: 800px;
+}
+.portfolio-popup .carousel .carousel-inner .carousel-item {
+  max-width: 800px;
+  height: 500px;
+}
+.portfolio-popup .carousel .carousel-inner .carousel-item img {
+  max-width: 800px;
+  height: 100%;
+}
+.portfolio-popup .closePopUp {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  z-index: 3;
+}
+.portfolio-popup .closePopUp:hover {
+  font-size: 35px;
+  transition: all ease-in-out 0.3s;
 }
 
 @media (max-width: 1200px) and (min-width: 575px) {
@@ -416,6 +486,18 @@
 
   .Education-content .Education-information span {
     font-size: 15px !important;
+  }
+
+  .carousel .carousel-inner {
+    max-width: 300px !important;
+  }
+  .carousel .carousel-inner .carousel-item {
+    max-width: 300px !important;
+    height: 200px !important;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    max-width: 100% !important;
+    height: 100% !important;
   }
 }
 * {

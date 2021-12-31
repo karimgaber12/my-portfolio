@@ -149,6 +149,24 @@
         }
     }
 }
+
+
+
+.carousel{
+  .carousel-inner{
+      max-width: 300px !important;
+      .carousel-item{
+          max-width: 300px !important;
+          height: 200px !important;
+          img{
+            max-width: 100% !important;
+            height: 100% !important;
+        }      
+      }
+  }
+
+}
+
 }
 
 

@@ -56,10 +56,7 @@ timeLineIntro.fromTo('.social_media',{y:200,opacity:0},{y:0,opacity:1},'<')
 
 //animation aboutMe
 let aboutSection = document.getElementById("About-me")
-const timeLineAbout = gsap.timeline({scrollTrigger:"#About-me",defaults:{duration:1.5,ease: Power1.easeInOut}})
-
-
-   
+const timeLineAbout = gsap.timeline({scrollTrigger:"#About-me",defaults:{duration:1.5,ease: Power1.easeInOut}})   
  timeLineAbout.fromTo(".about-head", {scale:0},{scale:1});
  timeLineAbout.fromTo(".about-information", {scale:0},{scale:1});
  timeLineAbout.fromTo(".about-text", {x:400,opacity:0},{x:0,opacity:1},'<');
@@ -80,5 +77,81 @@ const timeLineAbout = gsap.timeline({scrollTrigger:"#About-me",defaults:{duratio
 
   //animation Portfolio
   const timeLinePortfolio = gsap.timeline({scrollTrigger:"#Portfolio",defaults:{duration:4}})
-
   timeLinePortfolio.fromTo('#Portfolio',{opacity:0},{opacity:1})
+
+// create a pop up for showing portfolio images
+const popup = document.querySelector(".portfolio-popup")
+const popupImg = document.querySelector(".carousel")
+const showImgProjects = document.querySelectorAll(".project-img")
+const closePopUp = document.querySelector(".closePopUp")
+const imgSrc = document.querySelectorAll(".carousel-item  img")
+
+const projectsData = [
+    {
+        id: 1,
+        projectImg1 : 'images/portfolio/show/personal-dashboard/bookmark.png',
+        projectImg2 : 'images/portfolio/show/personal-dashboard/Todo.png',
+    },
+    {
+        id: 2,
+        projectImg1 : 'images/portfolio/show/budget-app/budgetApp1.png',
+        projectImg2 : 'images/portfolio/show/budget-app/budgetApp2.png',
+    },
+    {
+        id: 3,
+        projectImg1 : 'images/portfolio/show/shopping-cart/shoppingCart1.png',
+        projectImg2 : 'images/portfolio/show/shopping-cart/shoppingCart2.png',
+    },
+    {
+        id: 4,
+        projectImg1 : 'images/portfolio/show/learning-website/Main.png',
+        projectImg2 : 'images/portfolio/show/learning-website/learning-Project.png',
+    },
+    {
+        id: 5,
+        projectImg1 : 'images/portfolio/show/Returant Project/Main resturant.png',
+        projectImg2 : 'images/portfolio/show/Returant Project/resturant Project.png',
+    },
+    {
+        id: 6,
+        projectImg1 : 'images/portfolio/show/colorFlipper App/main.png',
+        projectImg2 : 'images/portfolio/show/colorFlipper App/main.png',
+    },
+    {
+        id: 7,
+        projectImg1 : 'images/portfolio/show/KAMOProject/Main KAMO.png',
+        projectImg2 : 'images/portfolio/show/KAMOProject/KAMO Project.png',
+    },
+    {
+        id: 8,
+        projectImg1 : 'images/portfolio/show/Portfolio-project/Main.png',
+        projectImg2 : 'images/portfolio/show/Portfolio-project/first-Project.png',
+    },
+    {
+        id: 9,
+        projectImg1 : 'images/portfolio/show/landingPage-pepsi/Main.png',
+        projectImg2 : 'images/portfolio/show/landingPage-pepsi/pepsi-Project.png',
+    },
+    {
+        id: 10,
+        projectImg1 : 'images/portfolio/show/landingPage-strong/Main.png',
+        projectImg2 : 'images/portfolio/show/landingPage-strong/Strong-Project.png',
+    },
+
+
+]
+
+showImgProjects.forEach(element => {
+    element.addEventListener("click",()=>{
+        popup.classList.add("active")
+        popupImg.classList.add("active")
+        const currentItem = element.getAttribute("data-number");
+        imgSrc[0].src = projectsData[currentItem - 1].projectImg1
+        imgSrc[1].src = projectsData[currentItem - 1].projectImg2
+
+    })
+});
+closePopUp.addEventListener("click",()=>{
+    popup.classList.remove("active")
+})
+
