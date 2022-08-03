@@ -160,6 +160,11 @@ const projectsData = [
         projectImg2 : 'images/portfolio/show/Amazon-clone/amazon-second (1).png',
     },
 
+    {
+        id: 12,
+        projectImg1 : 'images/portfolio/show/Clothing-shop/3.png',
+        projectImg2 : 'images/portfolio/show/Clothing-shop/4.png',
+    },
 
 ]
 // show preview project
