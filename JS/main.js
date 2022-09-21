@@ -165,6 +165,16 @@ const projectsData = [
         projectImg1 : 'images/portfolio/show/Clothing-shop/3.png',
         projectImg2 : 'images/portfolio/show/Clothing-shop/4.png',
     },
+    {
+        id: 13,
+        projectImg1 : 'images/portfolio/show/KAMO-Portfolio/KAMO2.png',
+        projectImg2 : 'images/portfolio/show/KAMO-Portfolio/KAMO3.png',
+    },
+    {
+        id: 14,
+        projectImg1 : 'images/portfolio/show/netflix-clone/netflix2.png',
+        projectImg2 : 'images/portfolio/show/netflix-clone/netflix3.png',
+    },
 
 ]
 // show preview project
