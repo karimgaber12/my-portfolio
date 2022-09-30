@@ -209,7 +209,7 @@ closePopUp.addEventListener("click",()=>{
 
 // loading page
 
-const spinner = document.querySelector(".spinner")
-window.addEventListener("load",()=>{
-    spinner.classList.add("active")
-})
+//const spinner = document.querySelector(".spinner")
+//window.addEventListener("load",()=>{
+    //spinner.classList.add("active")
+//})
