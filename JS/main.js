@@ -175,6 +175,11 @@ const projectsData = [
         projectImg1 : 'images/portfolio/show/netflix-clone/netflix2.png',
         projectImg2 : 'images/portfolio/show/netflix-clone/netflix3.png',
     },
+    {
+        id: 15,
+        projectImg1 : 'images/portfolio/show/masterAnimation/masterAnimate2 (1).PNG',
+        projectImg2 : 'images/portfolio/show/masterAnimation/masterAnimate2 (2).PNG',
+    },
 
 ]
 // show preview project
